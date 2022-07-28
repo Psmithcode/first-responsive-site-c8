@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --grey: #6B7280;
+    --light : #EEE ;
+    --pink: #EC4899;
+    --teal: #086972;
+    --green: #17B978;
+    --neon: #A7FF83;
+    }
+
+    html{
+        width: 100%;
+        height: 100%;
+        background-color: var(--light);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-container{
+        width: 1100px;
+        height: 800px;
+        background-color: var(--light);
+        display: flex;
+        border-radius: 5px;
+        flex-direction: column;
+        box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.83);
+        -webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.83);
+
+    }
+    
+    .container1 {
+        height: 50%;
+        width: 100%;
+        background-color: var(--neon);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container1 > h1{
+        font-size: 40px;
+        color: var(--darker);
+    }
+    
+    .container2 {
+        height: 50%;
+        width: 100%;
+        background-color: var(--darker);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .box   {
+        width: 200px;
+        height: 300px;
+        background-color: var(--darker);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .box > h2 {
+        margin: 0;
+    }
+
+    .box > p {
+        padding: 0 10px 0 10px;
+    }
+
+    #teal {
+        width: 100%;
+        height: 30px;
+        background-color: var(--teal);
+    }
+
+    #green {
+        width: 100%;
+        height: 30px;
+        background-color: var(--green);
+    }
+
+    #neon {
+        width: 100%;
+        height: 30px;
+        background-color: var(--neon);
+    }
+
+
+
+    @media (max-width: 576px) {
+       .page-container{
+        width: 95%;
+        height: 100%;
+        background-color: var(--light);
+       }
+
+       .container1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       }
+
+       .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+       }
+
+       .container1 > h1 {
+        font-size: 40px;
+       }
+
+    
+    }
